@@ -1,0 +1,96 @@
+/* 1. ESTILOS GERAIS */
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* 2. HERO SECTION COM IMAGEM DE FUNDO E GRADIENTE */
+.hero-section {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* Gradiente escuro sobre a imagem */
+        url('https://picsum.photos/1200/800'); /* URL da imagem de fundo */
+    background-size: cover;      /* Cobre todo o container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. CONTAINER DO CONTEÚDO */
+.hero-content {
+    text-align: center;
+    max-width: 700px;
+
+    display: flex;          /* Flex para os botões */
+    flex-direction: column; /* Mantém texto acima dos botões */
+    align-items: center;
+    gap: 20px;              /* Espaço entre título, subtítulo e botão */
+}
+
+/* 4. TIPOGRAFIA */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #e9ecef;
+}
+
+/* 5. BOTÕES */
+.hero-buttons {
+    display: flex;      /* Agrupa os botões horizontalmente */
+    gap: 15px;          /* Espaço entre os botões */
+    flex-wrap: wrap;    /* Quebra em linhas em telas pequenas */
+}
+
+/* Botão principal */
+.hero-button-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 30px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-button-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Botão secundário (apenas borda) */
+.hero-button-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.hero-button-secondary:hover {
+    background-color: #ffffff;
+    color: #343a40;
+    transform: translateY(-2px);
+}
